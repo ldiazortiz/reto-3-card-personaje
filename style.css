@@ -1,0 +1,93 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+:root {
+  /* Colores */
+  --rosado: #ff6fbe;
+  --marron-oscuro: #632a16;
+  --marron-claro: #974f3f;
+  --fondo: #fbee2b;
+  --fondo-gradiente: linear-gradient(to bottom, #fbee2b, #a87908);
+  --card: #f7f8fa;
+  --botton: #ef0b02;
+}
+
+body {
+  font-family: Arial;
+  /* background-color: #f2f2f2; */
+  background-color: black;
+}
+
+.img {
+  width: 100%;
+}
+
+.card {
+  width: 300px;
+  margin: 250px auto;
+  background-color: var(--card);
+  border-radius: 40px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  box-shadow: 0 0 16px -6px black;
+}
+
+.card__figure {
+  /* background-color: var(--fondo); */
+  /* background-image: linear-gradient(to bottom, #fbee2b, #a87908); */
+  background-image: var(--fondo-gradiente);
+  /* height: 278px; */
+  height: 260px;
+  border-radius: 40px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  position: relative;
+}
+
+.card__character {
+  position: absolute;
+  /* bottom: 10px; */
+  bottom: -5px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+
+  width: 90%;
+  filter: drop-shadow(2px 4px 10px black);
+}
+
+.card__texts {
+  padding: 1.5rem;
+  width: 90%;
+  margin: 0 auto;
+  font-size: 1.5rem;
+}
+
+.card__title {
+  font-size: 2.3rem;
+  margin-bottom: 12px;
+}
+
+.card__paragraph {
+  color: #484848;
+  line-height: 1.25;
+  margin-bottom: 24px;
+}
+
+.cta {
+  display: block;
+  color: #fff;
+  /* background-color: #fff; */
+  background-color: var(--botton);
+  padding: 1rem 0;
+
+  border-radius: 15px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+
+  margin: 0 auto;
+  text-decoration: none;
+  text-align: center;
+}
